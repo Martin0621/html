@@ -7,20 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
+        
         body {
             background-color: pink;
             width: 60%;
             margin: auto;
-           
-           
-
         }
-
-
+        
         .container {
             display: flex;
             justify-content: space-around;
@@ -28,9 +21,10 @@
 
         .box {
             background-color: lawngreen;
-            width:50px;
+            width: 50px;
             height: 50px;
         }
+
         .container1 {
             display: flex;
             justify-content: space-around;
@@ -43,7 +37,8 @@
             margin-top: 30px;
             margin-left: 20px;
         }
-        .column{
+
+        .column {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -51,17 +46,17 @@
             align-items: center;
             margin-top: 30px;
 
-            
         }
 
         .box2 {
             background-color: lawngreen;
             width: 30%;
             height: 50px;
-            margin-top: 30px;}
+            margin-top: 30px;
+        }
 
-
-        @media only screen and (max-width: 300px) {
+     
+        @media only screen and (max-width: 500px) {
             body {
                 background-color: cornflowerblue;
             }
@@ -71,43 +66,70 @@
             }
 
             .box {
-                width: 80%;
+                width: 20%;
                 margin-bottom: 20px;
             }
         }
-       
 
-            .box1 {
-                width: 80%;
-                margin-bottom: 20px;
-            }
-        
+
+        .box1 {
+            width: 20%;
+            margin-bottom: 20px;
+        }
+
+        .box2 {
+            width: 20%;
+            margin-bottom: 20px;
+        }
+
+        input{
+            width: 80%;
+            margin-bottom: 20px;
+            height: 50px;
+            border-radius: 15px;
+        }
+        label{
+            display: block;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 
 <body>
     media queries
     <table>
-    <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
 
-    <div class="container1">
-        <div class="box1"></div>
-        <div class="box1"></div>
-        <div class="box1"></div>
-        <div class="box1"></div>
-    </div>
-</table>
-<table>
-    <div class="column">
-        <div class="box2"></div>
-        <div class="box2"></div>
-        <div class="box2"></div>
-    </div>
-</table>
+        <div class="container1">
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+        </div>
+    </table>
+    <table>
+        <div class="column">
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+        </div>
+
+        <form action="container3">
+            <div class="">
+                <label for="">名字:</label>
+                <input type="">
+
+            </div>
+            <div class="">
+                <label for="">電話:</label>
+                <input type="">
+            </div>
+        </form>
+    </table>
 </body>
 
 </html>
